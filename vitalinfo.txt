@@ -1,0 +1,11 @@
+"laravel/ui": "^1.1",
+        "tymon/jwt-auth": "^1.0.0-rc.5"
+        
+
+Just modify the middleware into api.php removing the auth filter
+
+Route::middleware('auth:api')->get
+
+to
+
+Route::middleware('api')->get
