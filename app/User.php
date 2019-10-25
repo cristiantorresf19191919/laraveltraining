@@ -62,4 +62,17 @@ class User extends Authenticatable implements JWTSubject
      {
          return $this->hasMany('App\Question');
      }
+
+     
+    public function getNameAttribute($valorModificar){
+        return strtoupper($valorModificar);
+    }
+    public function getEmailAttribute($valorModificar){
+        return strtolower($valorModificar);
+    }
+    public function setNameAttribute($valorModificar){
+        $this->attributes['name']=ucwords($v);
+    }
+
+    
 }

@@ -14,6 +14,16 @@ class Question extends Model
         return $this->belongsTo('App\User');
     }
 
+    /* Aprendiendo Query Scopes */
+
+    public function scopeActive($modelo){
+        return $modelo->where('active',1);  
+    }
+
+    public function scopePopular($modelo, $nivel){
+        return $modelo->where('views','>',$nivel);
+    }
+
     /* Mutator */
 
     public function setTitleAttribute($value){
