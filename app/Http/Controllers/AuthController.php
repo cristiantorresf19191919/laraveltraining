@@ -81,3 +81,14 @@ class AuthController extends Controller
         ]);
     }
 }
+
+/*
+.net
+angular 
+javascript
+zona franca cedula
+calle 13 No 108a - 85 
+edificio business center
+piso 3 of 301
+ing erick zorro
+*/
