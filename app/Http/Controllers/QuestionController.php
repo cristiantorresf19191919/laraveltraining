@@ -90,4 +90,5 @@ class QuestionController extends Controller
     public function getNameAttribute($valorModificar){
         return strtoupper($valorModificar);
     }
+    
 }

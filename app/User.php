@@ -64,15 +64,15 @@ class User extends Authenticatable implements JWTSubject
      }
 
      
-    public function getNameAttribute($valorModificar){
+ /*    public function getNameAttribute($valorModificar){
         return strtoupper($valorModificar);
     }
     public function getEmailAttribute($valorModificar){
         return strtolower($valorModificar);
     }
     public function setNameAttribute($valorModificar){
-        $this->attributes['name']=ucwords($v);
+        $this->attributes['name']=ucwords($valorModificar);
     }
-
+ */
     
 }
